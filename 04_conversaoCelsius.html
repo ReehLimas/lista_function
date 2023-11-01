@@ -6,10 +6,14 @@
     */
 
     //Entrada
-
+    let fahrenheit = Number(prompt`Informe a temperatura em fahrenheit:`);
 
     //Processamento
-
+    function celcius(fahrenheit){
+        fahrenheit = (fahrenheit - 32) * 5 / 9;
+        alert(`sua temperatura em celcius é ${fahrenheit.toFixed(2)}`)
+    }
+    celcius(fahrenheit)
 
     //Saída
 
