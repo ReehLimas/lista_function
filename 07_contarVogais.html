@@ -7,8 +7,18 @@
     */
 
     //Entrada
+    let contador;
+    function totalString(palavra) {
+        let contador = 0
+        for (let nome of palavra) {
+            if (nome === "a" || nome === "e" || nome === "i" || nome === "o" || nome === "u") {
+                contador++
+            }
+        }
+        return alert(`A palavra ${palavra} contém ${contador} vogais`);
+    }
 
-
+    const resultado = totalString(prompt(`Informe uma palavra`).toLowerCase());
     //Processamento
 
 
