@@ -5,8 +5,17 @@
     */
 
     //Entrada
-
-
+    let conta;
+    function parImpar(numero){
+        let conta = numero % 2 == 0;
+        if(conta  != 0){
+            return alert(`Seu número é par`)
+        }
+        if(conta == 0){
+            return alert(`Seu número é impar`)
+        }
+    }
+    const resultado = parImpar(Number(prompt(`Informe um número inteiro e eu falo se é par ou Ímpar`)))
     //Processamento
 
 
