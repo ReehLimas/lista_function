@@ -9,14 +9,14 @@
     let contador;
     function fraseLetra(palavra, letra){
         let contador = 0;
-        for(nome of palavra){
+        for(let nome of palavra){
             if(nome === letra){
                 contador++
             }
-            return alert(`${palavra} tem ${contador} ${letra}`)
         }
+        return alert(`${palavra} tem ${contador} ${letra}`)
     }
-    const resultado= fraseLetra(prompt(`Informe sua palavra`).toUpperCase(), prompt(`Informe sua letra`));
+    const resultado = fraseLetra(prompt(`Informe sua palavra`).toUpperCase(), prompt(`Informe sua letra`).toUpperCase());
     //Processamento
 
 
